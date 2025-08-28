@@ -98,7 +98,9 @@
 
      * Save the job 
 
- ![my image](./images/Screenshot%202025-08-25%20174351.png)
+![my image](./images/Screenshot%202025-08-28%20053040.png)
+
+![my image](./images/Screenshot%202025-08-25%20174351.png)
 
     ---
 
@@ -120,6 +122,8 @@
     * Post-Build Actions --> Add --> Build other projects --> node-deploy-job 
 
     * Save the job 
+    
+![my image](./images/Screenshot%202025-08-28%20053438.png)
 
 ![my image](./images/Screenshot%202025-08-25%20174618.png)
 
@@ -143,8 +147,10 @@
   * **Set Email Notification** :
     * Post-Build Actions --> Add --> Email Notification -> Enter Email 
   * Save the job
+
+![my image](./images/Screenshot%202025-08-28%20053646.png)
   
-  ![myimage](./images/Screenshot%202025-08-25%20175233.png)
+![myimage](./images/Screenshot%202025-08-25%20175233.png)
 
 ---
 
@@ -165,10 +171,16 @@ node-pull-job --> node-install-job --> node-deploy-job
 * ### http://< server-public-ip >: 3000
 
 ## Notes : 
-* ### Ensure port 3000 is open in server security group .
-
 * ### Use pm2 for production to keep the app running in the background .
 
+* ### Ensure port 3000 is open in server security group .
+
+     * Open port in security group : 
+       1. Go to instance -> Security groups -> Edit inbounds rules -> Add rule  
+       2. Type : Custome TCP
+       3. Port Range : 3000
+       
+![my image](./images/Screenshot%202025-08-28%20054445.png)
 ## Output : 
 
 ![my image](./images/Screenshot%202025-08-25%20073403.png)
